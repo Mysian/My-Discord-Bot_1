@@ -86,3 +86,4 @@ client.on('voiceStateUpdate', (oldState, newState) => {
     fs.writeFileSync(activityPath, JSON.stringify(activity, null, 2));
   }
 });
+console.log("📦 디버그: 토큰 =", process.env.TOKEN);
