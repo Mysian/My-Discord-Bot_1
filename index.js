@@ -46,6 +46,8 @@ client.on('interactionCreate', async interaction => {
   }
 });
 console.log("✅ [디버그] Railway TOKEN:", process.env.TOKEN);
+console.log("✅ 디버그: 토큰 존재 여부 =", !!process.env.TOKEN);
+console.log("📦 디버그: 토큰 내용 =", process.env.TOKEN?.slice(0, 10) + '...');
 
 client.login(process.env.TOKEN);
 
