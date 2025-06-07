@@ -45,6 +45,7 @@ client.on('interactionCreate', async interaction => {
     await interaction.reply({ content: '❌ 명령어 실행 중 오류가 발생했어요.', ephemeral: true });
   }
 });
+console.log("✅ [디버그] Railway TOKEN:", process.env.TOKEN);
 
 client.login(process.env.TOKEN);
 
